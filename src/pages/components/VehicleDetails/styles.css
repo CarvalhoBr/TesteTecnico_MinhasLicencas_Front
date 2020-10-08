@@ -1,0 +1,60 @@
+.vehicleDetails{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: var(--selected-card);
+    margin-top: 2em;
+    padding: 0 1em;
+}
+
+.vehicleDetails .name {
+    font-size: 2em;
+    color: var(--accent-color);
+}
+
+.vehicleDetails .informations {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.vehicleDetails .informations div {
+    padding: 0 20em 4em 0em
+}
+
+.vehicleDetails .informations div h3 {
+    color: var(--primary-text);
+}
+
+.vehicleDetails .informations div p {
+    color: var(--secondary-text);
+}
+
+.vehicleDetails .description{
+    padding-bottom: 5em;
+    color: var(--primary-text);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid var(--secondary-text);
+}
+
+.edit {
+    background-color: var(--primary-text);
+    color: var(--secondary-ligth);
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    max-width: 7em;
+    max-height: 3em;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    margin: 2em 0em;
+    
+}
+

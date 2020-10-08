@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logoWrapper {
+    background-color: var(--primary-text);
+    align-items: center;
+    display: flex;
+    flex: 1;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2em;
+    color: var(--secondary-ligth);
+}
+
+.logo p {
+    margin-left: 2em;
+    font-size: 1.6em;
+}
+
+.searchBar {
+    display: flex;
+    flex: 1;
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    background-color: var(--primary-dark);
+    color: var(--secondary-ligth);
+    border: none;
+    padding-left: 2em;
+
+}

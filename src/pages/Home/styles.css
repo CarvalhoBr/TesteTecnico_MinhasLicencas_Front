@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+.header {
+    display: flex;
+    max-height: 5em;
+}
+
+.title {
+    display: flex;
+    height: 5em;
+    color: var(--primary-text);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.content .list {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 2em 1em 2em 2em;
+}
+
+.content .list .vehicleList{
+    font-size: 1.4em;
+    color: var(--primary-ligth);
+}
+
+.content .details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 2em 2em 2em 1em;
+}
+
+.content .details .vehicleDetailsTitle {
+    font-size: 1.4em;
+    color: var(--primary-ligth);
+
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 2em 0;
+    border-bottom: 1px solid var(--secondary-ligth);
+}
+
+.title p{
+    font-size: 1.6em;
+}

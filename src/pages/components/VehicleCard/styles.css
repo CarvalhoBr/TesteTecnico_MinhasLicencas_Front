@@ -1,0 +1,34 @@
+.vehicleCard {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    max-height: 7em;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--card-color);
+    margin-top: 2em;
+    padding: 0 1em;
+}
+
+.vehicleCard p {
+    line-height: 0.7em;
+}
+
+.vehicleCard .name {
+    font-size: 1.2em;
+    color: var(--accent-color);
+}
+
+.vehicleCard .brand {
+    font-weight: bold;
+    color: var(--primary-ligth);
+}
+
+.vehicleCard .year {
+    color: var(--secondary-text);
+}
+
+.sellIcon {
+    margin-right: 1em;
+    color: var(--primary-text);
+}
