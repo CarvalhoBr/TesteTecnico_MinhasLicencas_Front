@@ -1,37 +1,42 @@
 import React from 'react'
 import { RiPencilFill } from 'react-icons/ri'
+import { BsFillTagFill } from 'react-icons/bs'
 
 import './styles.css'
 
-export default function VehicleDetails(){
+export default function VehicleDetails({details, openModal}: any){
     return(
-        <div className="vehicleDetails">
-            <p className="name">Palio</p>
+        <div className={"vehicleDetails " + (details===-1? "noData" : "data")}>
 
-            <div className="informations">
-                <div className="brand">
-                    <h3>Marca</h3>
-                    <p>FIAT</p>
+            <div className="contentWrapper">
+                <p className="name">{details.veiculo}</p>
+                <div className="informations">
+                    <div className="brand">
+                        <h3>Marca</h3>
+                        <p>{details.marca}</p>
+                    </div>
+                    <div className="year">
+                        <h3>Ano</h3>
+                        <p>{details.ano}</p>
+                    </div>
                 </div>
-                <div className="year">
-                    <h3>Ano</h3>
-                    <p>2016</p>
+
+                <div className="description">
+                    <p>
+                        {details.descricao}
+                    </p> 
                 </div>
             </div>
 
-            <div className="description">
-                <p>
-                    O pálio é um carro ..........
-                </p> 
-            </div>
+                
 
             <footer>
-                <button className="edit">
+                <button className="edit" onClick={() => openModal()}>
                     <RiPencilFill/>
                     <p>EDITAR</p>
                 </button>
-                <div className="sellIcon">
-
+                <div className={"sellIcon " + (details.vendido? "sold": "")} >
+                    <BsFillTagFill size="4em"/>
                 </div>
             </footer>
         </div>

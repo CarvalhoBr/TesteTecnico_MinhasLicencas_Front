@@ -5,7 +5,11 @@
     background-color: var(--selected-card);
     margin-top: 2em;
     padding: 0 1em;
+    position: relative;
+    max-height: 40em;
 }
+
+.vehicleDetails .contentWrapper {}
 
 .vehicleDetails .name {
     font-size: 2em;
@@ -33,6 +37,7 @@
 .vehicleDetails .description{
     padding-bottom: 5em;
     color: var(--primary-text);
+    margin-bottom: 5em;
 }
 
 footer {
@@ -41,6 +46,12 @@ footer {
     justify-content: space-between;
     align-items: flex-end;
     border-top: 1px solid var(--secondary-text);
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    margin-left: -1em;
+    
+    
 }
 
 .edit {
@@ -54,7 +65,14 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     border: none;
-    margin: 2em 0em;
+    margin: 2em 2em;
     
 }
 
+.sellIcon {
+    margin: 2em;
+}
+
+.noData{
+    visibility: hidden;
+}

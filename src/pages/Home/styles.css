@@ -33,6 +33,7 @@
 .content .list .vehicleList{
     font-size: 1.4em;
     color: var(--primary-ligth);
+    min-width: 50%;
 }
 
 .content .details {

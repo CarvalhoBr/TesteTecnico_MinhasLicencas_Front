@@ -32,3 +32,11 @@
     margin-right: 1em;
     color: var(--primary-text);
 }
+
+.selected{
+    background-color: var(--selected-card);
+}
+
+.sold {
+    color: var(--accent-color);
+}
